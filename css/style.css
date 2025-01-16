@@ -1,4 +1,6 @@
-/* Custom styles for the DWD Opt-in Page */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Oxygen', sans-serif;
+}
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
 }
