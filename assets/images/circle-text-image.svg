@@ -4,7 +4,7 @@
             <path data-name="Rectangle 89" style="fill:#4b4334" d="M0 0h194.333v194.362H0z"/>
         </clipPath>
     </defs>
-    <g data-name="Circle Text Image">
+    <g id="text-animate" data-name="Circle Text Image">
         <text transform="rotate(-19.84 152.53 -205.636)" style="font-family:PlayfairDisplay-Regular,Playfair Display;font-size:20px;fill:#4b4334"><tspan x="0" y="0">Y</tspan></text>
         <g data-name="Group 35">
             <g data-name="Group 34" style="clip-path:url(#jzz660krwa)" transform="matrix(.985 .174 -.174 .985 33.751 0)">

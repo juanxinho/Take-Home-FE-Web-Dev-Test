@@ -4,7 +4,6 @@
 
 body {
     font-family: 'Oxygen', sans-serif;
-    /* Full-page gradient background */
     background: linear-gradient(135deg, #f8ede3, #f6dfd2, #f9e5cf);
     background-size: 200% 200%; /* Make gradient larger for smooth blending */
     animation: gradientAnimation 8s ease infinite; /* Smooth animation for gradient */
@@ -19,7 +18,83 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     color: #4b4334;
     font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    line-height: 1.23;
+}
+
+p {
+    color: #7e7666;
+}
+
+button {
+
+}
+
+.background-effect {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90%;
+    height: 50%;
+    background: #cb6f56;
+    opacity: 0.13;
+    transform: translate(-5%, 0%);
+    pointer-events: none;
+    border-radius: 0 0 400px 400px;
+    @screen lg {
+        width: 40%;
+        height: 100%;
+        transform: translate(-20%, 0%);
+
+    }
+}
+
+.logo {
+    color: #4b4334;
+    font-family: 'Playfair Display', serif;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: var(--swiper-navigation-top-offset,95%);
+    width: 12px;
+    height: 20px;
+    margin-top: 0;
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e0d3c2;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.swiper-pagination-bullet-active {
+    background: #e0d3c2;
+}
+
+#text-animate {
+    transform-origin: center;
+    animation: loader 10s infinite;
+}
+
+
+@keyframes loader {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 365deg;
+    }
 }

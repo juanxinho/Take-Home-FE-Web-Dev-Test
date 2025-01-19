@@ -28,10 +28,16 @@ document.querySelectorAll('.tab-btn').forEach(button => {
     });
 });
 
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.swiper', {
     loop: true,
+    slidesPerView: 1,
+    spaceBetween: 15,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
 });
