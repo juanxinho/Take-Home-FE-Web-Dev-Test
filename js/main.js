@@ -1,15 +1,29 @@
-document.querySelectorAll('button').forEach((btn) => {
+document.querySelectorAll('.accordion-button').forEach((btn) => {
     btn.addEventListener('click', () => {
         const content = btn.nextElementSibling;
+
+        // Close all other accordion contents
+        document.querySelectorAll('.accordion-button').forEach((otherBtn) => {
+            const otherContent = otherBtn.nextElementSibling;
+
+            if (otherContent !== content && !otherContent.classList.contains('hidden')) {
+                otherContent.classList.add('hidden');
+                otherBtn.querySelector('span img').setAttribute('src', '/assets/images/plus-circle-line.svg');
+            }
+        });
+
+        // Toggle the clicked accordion content
         if (content.classList.contains('hidden')) {
             content.classList.remove('hidden');
-            btn.querySelector('span').textContent = '−';
+            btn.querySelector('span img').setAttribute('src', '/assets/images/minus-circle-line.svg');
         } else {
             content.classList.add('hidden');
-            btn.querySelector('span').textContent = '+';
+            btn.querySelector('span img').setAttribute('src', '/assets/images/plus-circle-line.svg');
         }
     });
 });
+
+
 
 document.querySelectorAll('.tab-btn').forEach(button => {
     button.addEventListener('click', () => {

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
 body {
     font-family: 'Oxygen', sans-serif;
     background: linear-gradient(135deg, #f8ede3, #f6dfd2, #f9e5cf);
@@ -31,8 +35,9 @@ p {
     color: #7e7666;
 }
 
-button {
-
+.active-tab {
+    color: #2c2820;
+    background: #fdf3e3;
 }
 
 .background-effect {
@@ -58,6 +63,14 @@ button {
 .logo {
     color: #4b4334;
     font-family: 'Playfair Display', serif;
+}
+
+.accordion-content {
+        transition-timing-function: cubic-bezier(.4,0,.2,1);
+        transition-duration: .3s;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(.4,0,.2,1);
+        transition-duration: .15s;
 }
 
 .swiper-button-next, .swiper-button-prev {
