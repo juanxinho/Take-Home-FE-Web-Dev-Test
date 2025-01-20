@@ -46,7 +46,7 @@ p {
     top: 0;
     right: 0;
     width: 90%;
-    height: 50%;
+    height: 43%;
     background: #cb6f56;
     opacity: 0.13;
     transform: translate(-5%, 0%);
@@ -94,6 +94,10 @@ p {
 
 .swiper-pagination-bullet-active {
     background: #e0d3c2;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 15px);
 }
 
 #text-animate {
